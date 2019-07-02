@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Win a Dinner</title>
+    <link rel="icon" type="image/png" href="images/forks_icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER OF THE PAGE-->
+        <header class="mb_1">
+            <section class="float_left">
+                <h1><a href="game.html">Win a dinner!</a></h1>
+                <hr>
+                <img src="images/win.png" alt="image" class="float_left img_big ml_10">
+                <p class="yellow">Play a game and try to win a dinner in our restaurant!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ut quas!</p>
+            </section>
+            <section class="float_left">
+                <img src="images/header_img_1.png" alt="image">
+            </section>
+        </header>
+
+        <!-- MAIN PART OF THE PAGE-->
+        <main>
+            <!-- WINNERS ASIDE-->
+            <aside>
+                <h4>Last week winners</h4>
+                <a href="#" class="side_link">Ann Smith</a>
+                <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem
+                    corrupti labore, libero, placeat laborum numquam eaque repellendus totam.</p>
+                <a href="#" class="side_link">Bob Jones</a>
+                <p class="my-p">Excepturi sed omnis placeat molestiae eaque aliquam nisi cupiditate qui
+                    vel nobis, amet ipsam harum fuga necessitatibus, ipsa eligendi eos unde quod.</p>
+            </aside>
+            <section class="main_dark mb_5 width_70">
+                <h2><span>Win</span> a dinner!</h2>
+                <h3>Rock, paper, scissors</h3>
+                <p class="my-p" id="text-game">Choose rock, paper or scissors and try to win a dinner!</p>
+                <select id="choice" onchange="change()">
+                    <option value="">Please choose</option>
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <section>
+                    <div id="your_choice"></div>
+                </section>
+                <section>
+                    <div id="comp_choice"></div>
+                </section>
+                <section id="results"></section>
+            </section>
+        </main>
+
+        <!-- FOOTER OF THE PAGE-->
+        <footer>
+            <p>
+                &copy; 2019. Restaurant | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
