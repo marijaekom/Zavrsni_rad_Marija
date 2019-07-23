@@ -84,7 +84,7 @@ header ul li a:hover{
 
 /*NAVIGATION*/
 nav{
-    width: 80%;
+    width: 88%;
     height:4.375rem;
     text-align:center;
 }
@@ -291,6 +291,7 @@ aside h4{
     padding: 2%;
 }
 
+
 .my-list li{
     list-style-image: url(../images/forks_icon.png);
     list-style-position: inside;
@@ -310,6 +311,33 @@ aside h4{
 
 .my-list li a:hover{
     color:#a38e66;
+}
+
+.menu-list hr{
+	position: absolute;
+    width: 80%;
+    border: dashed 1px #a38e66;
+    margin-top: -0.6em;
+    z-index: 0;
+    margin-left: 3em;
+}
+
+.menu-list li{
+	position: relative;
+    z-index: 1;
+}
+
+.menu-list a{
+    width: 90%;
+    overflow: hidden;
+}
+
+.menu-list span{
+	    background-color: #684b43;
+    z-index: 1;
+    position: relative;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 /*IMAGES*/
@@ -346,6 +374,7 @@ aside h4{
     margin-left: 4%;
     margin-bottom: 10%;
     height: 7.35rem;
+	text-align: center;
 }
 
 .link_img a{
@@ -379,7 +408,6 @@ aside h4{
 
 .main_image{
 	padding:5% 0%;
-	width:22.1875rem;
 }
 
 .main_image img{
@@ -503,6 +531,10 @@ iframe{
     width:60%;
 }
 
+.width_58{
+	width:58%;
+}
+
 .width_70{
     width:70%;
 }
@@ -531,6 +563,18 @@ iframe{
     color:yellow;
 }
 
+.w-98{
+	width: 98%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.w-32 {
+	width: 32%;
+}
+
 /*CSS FOR JS*/
 
 #results a{
@@ -556,3 +600,5 @@ select{
     font-size: 0.8rem;
     margin-left: 4%;
 }
+
+
