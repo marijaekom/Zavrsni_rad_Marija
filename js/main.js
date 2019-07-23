@@ -21,43 +21,41 @@ let computerChoice = Math.random();
 
 function play (){
     console.log(computerChoice);
-    document.getElementById("comp_choice").innerHTML = "<p>Computer chose <span class='yellow'>"+computerChoice+"</span>.<p><button id='end' onclick='endgame()'>Results</button>";
+    document.getElementById("comp_choice").innerHTML = "<p>Computer chose <span class='yellow'>"+computerChoice+"</span>.<p><button id='end' onclick='compare()'>Results</button>";
     document.getElementById("play").classList.add("display_none");
     
 }  
 
-function endgame (){
-    let compare = function(choice1,choice2) {
-        if (choice1 === choice2) {
-            return "<p class='yellow'>It's a tie!  </p><a href='game.html'>Play again!</a>";
+function compare () {
+		document.getElementById("end").classList.add("display_none");
+		let results;
+        if (choice === computerChoice) {
+            results = "<p class='yellow'>It's a tie!  </p><a href='game.html'>Play again!</a>";
         }
-        if (choice1 === "rock") {
-            if (choice2 === "scissors") {
-                return "<p class='yellow'>You win! </p><a href='#'>Claim your prize!</a>";
+        if (choice === "rock") {
+            if (computerChoice === "scissors") {
+                results = "<p class='yellow'>You win! </p><a href='#'>Claim your prize!</a>";
             } else {
-                return "<p class='yellow'>You lose! Try again.</p> <a href='game.html'>Play again!</a>";
+                results = "<p class='yellow'>You lose! Try again.</p> <a href='game.html'>Play again!</a>";
             }
         }
-        if (choice1 === "paper") {
-            if (choice2 === "rock") {
-                return "<p class='yellow'>You win!</p><a href='#'>Claim your prize!</a>";
+        if (choice === "paper") {
+            if (computerChoice === "rock") {
+                results = "<p class='yellow'>You win!</p><a href='#'>Claim your prize!</a>";
             } else {
-                return "<p class='yellow'>You lose! Try again. <p/><a href='game.html'>Play again!</a>";
+                results = "<p class='yellow'>You lose! Try again. <p/><a href='game.html'>Play again!</a>";
             }
         }
-        if (choice1 === "scissors") {
-            if (choice2 === "rock") {
-                return "<p class='yellow'>You lose! Try again. </p><a href='game.html'>Play again!</a>";
+        if (choice === "scissors") {
+            if (computerChoice === "rock") {
+                results = "<p class='yellow'>You lose! Try again. </p><a href='game.html'>Play again!</a>";
             } else {
-                return " <p class='yellow'>You win! </p><a href='#'>Claim your prize!</a>";
+                results = " <p class='yellow'>You win! </p><a href='#'>Claim your prize!</a>";
             }
         }
+		document.getElementById("results").innerHTML = "<h2>"+results+"</h2>";
     };
-    
-    let results = compare(choice,computerChoice);
-    document.getElementById("end").classList.add("display_none");
-    document.getElementById("results").innerHTML = "<h2>"+results+"</h2>";
 
-}
+
 
 
